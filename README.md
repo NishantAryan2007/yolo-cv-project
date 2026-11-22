@@ -15,6 +15,10 @@ Four real-time object-detection applications built with YOLOv8, OpenCV and SORT 
   <img src="docs/screenshots/ppe_detector.png" height="420">
 </p>
 
+<p align="center">
+  <img src="docs/screenshots/traffic_violation.png" width="640">
+</p>
+
 ---
 
 ## 1. Car Counter
