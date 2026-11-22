@@ -1,6 +1,6 @@
 # YOLO Computer Vision Project
 
-Four real-time object-detection applications built with YOLOv8, OpenCV and SORT tracking — covering the full pipeline from custom dataset sourcing and model training (Google Colab) to real-time local inference.
+Four real-time object-detection applications built with YOLOv8, OpenCV and SORT tracking, covering the full pipeline from custom dataset sourcing and model training (Google Colab) to real-time local inference.
 
 | App | What it does | Model |
 |---|---|---|
@@ -40,12 +40,12 @@ python car_counter/car_counter_final.py
 
 Two independently working variants for two real-world scenarios.
 
-**Footpath variant** — a single line counting one-directional foot traffic:
+**Footpath variant** : a single line counting one-directional foot traffic:
 ```bash
 python people_counter/footpath_counter.py
 ```
 
-**Escalator variant** — three separate counting zones (two "up", one "down") captured from a single camera angle, each zone calibrated with its own coordinates and counted independently by direction:
+**Escalator variant** : three separate counting zones (two "up", one "down") captured from a single camera angle, each zone calibrated with its own coordinates and counted independently by direction:
 ```bash
 python people_counter/people_counter.py
 ```
@@ -93,7 +93,7 @@ Detects motorcycle riders without helmets and counts violations as they cross a 
 python traffic_violation_detector/traffic_violation_detector.py
 ```
 
-**Counting with a region mask:** instead of numeric line coordinates, the counting zone is a hand-painted black-and-white image (`traffic_mask.png`). A white shape is painted onto a sample frame to match the real road geometry, and the code does a simple pixel lookup against it — a closer fit to irregular road layouts than rectangles allow. Detections are drawn across the whole frame; only riders whose tracked position enters the white zone are counted.
+**Counting with a region mask:** instead of numeric line coordinates, the counting zone is a hand-painted black-and-white image (`traffic_mask.png`). A white shape is painted onto a sample frame to match the real road geometry, and the code does a simple pixel lookup against it, a closer fit to irregular road layouts than rectangles allow. Detections are drawn across the whole frame; only riders whose tracked position enters the white zone are counted.
 
 Each "Without Helmet" rider is tracked with SORT and counted once, and violations are logged to `traffic_violation_detector/traffic_violations_log.csv`.
 
@@ -124,7 +124,7 @@ Run every command from the project root. Models and videos each app expects:
 | PPE Detector | `yolov8n.pt` (auto-downloads) + `ppe_best.pt` (included) | `ppe_test.mp4`, or a webcam |
 | Traffic Violation | `traffic_best_v2.pt` (included) | `traffic.mp4` |
 
-`yolov8n` is used where speed matters; `yolov8s` is used for the crowded People Counter scenes, where it separates overlapping people better. Demo videos aren't included in the repo (file size) — supply your own footage under the names above.
+`yolov8n` is used where speed matters; `yolov8s` is used for the crowded People Counter scenes, where it separates overlapping people better. Demo videos aren't included in the repo (file size),  supply your own footage under the names above.
 
 ### Using your own footage
 
