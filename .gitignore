@@ -1,0 +1,24 @@
+# Virtual environment
+venv/
+
+# Model weights: only the two custom-trained models are committed
+# (yolov8n.pt / yolov8s.pt auto-download on first run)
+models/*.pt
+!models/ppe_best.pt
+!models/traffic_best_v2.pt
+
+# Demo videos (too large)
+*.mp4
+
+# Calibration images the tools/ scripts write to the project root
+/*.jpg
+
+# Generated violation logs
+*.csv
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Editor settings
+.vscode/
