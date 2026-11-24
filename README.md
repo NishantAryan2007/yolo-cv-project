@@ -25,7 +25,7 @@ Four real-time object-detection applications built with YOLOv8, OpenCV and SORT 
 
 <img src="docs/screenshots/car_counter.png" width="300">
 
-Detects cars, trucks, buses and motorbikes on a highway video, tracks them with SORT, and counts each vehicle once as it crosses a calibrated line , with a per-class breakdown, not just a single total.
+Detects cars, trucks, buses and motorbikes on a highway video, tracks them with SORT, and counts each vehicle once as it crosses a calibrated line, with a per-class breakdown, not just a single total.
 
 ```bash
 python car_counter/car_counter_final.py
@@ -44,12 +44,12 @@ python car_counter/car_counter_final.py
 
 Two independently working variants for two real-world scenarios.
 
-**Footpath variant** : a single line counting one-directional foot traffic:
+**Footpath variant**: a single line counting one-directional foot traffic:
 ```bash
 python people_counter/footpath_counter.py
 ```
 
-**Escalator variant** : three separate counting zones (two "up", one "down") captured from a single camera angle, each zone calibrated with its own coordinates and counted independently by direction:
+**Escalator variant**: three separate counting zones (two "up", one "down") captured from a single camera angle, each zone calibrated with its own coordinates and counted independently by direction:
 ```bash
 python people_counter/people_counter.py
 ```
@@ -62,7 +62,7 @@ Zone coordinates were calibrated with a labeled grid overlay (`tools/grid_frame.
 
 <img src="docs/screenshots/ppe_detector.png" width="300">
 
-Detects five PPE categories (Coverall, Face_Shield, Gloves, Goggles, Mask) and performs **per-person compliance checking** , working out what each individual is and isn't wearing, not just whether PPE is visible somewhere in the frame.
+Detects five PPE categories (Coverall, Face_Shield, Gloves, Goggles, Mask) and performs **per-person compliance checking**, working out what each individual is and isn't wearing, not just whether PPE is visible somewhere in the frame.
 
 ```bash
 python ppe_detector/ppe_detector.py
