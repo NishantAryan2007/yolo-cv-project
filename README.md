@@ -197,6 +197,6 @@ YOLO_CV_Project/
 ## Credits
 
 - [Ultralytics YOLOv8](https://github.com/ultralytics/ultralytics)
-- [SORT](https://github.com/abewley/sort) : Bewley et al.
-- [CPPE-5: Medical Personal Protective Equipment Dataset](https://link.springer.com/article/10.1007/s42979-023-01748-7) : Dagli & Shaikh
+- [SORT](https://github.com/abewley/sort), Bewley et al.
+- [CPPE-5: Medical Personal Protective Equipment Dataset](https://link.springer.com/article/10.1007/s42979-023-01748-7), Dagli & Shaikh
 - ["Helmet Detection_YOLOv8"](https://universe.roboflow.com/learning-evidence/helmet-detection_yolov8) by Learning Evidence, licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
