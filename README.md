@@ -54,7 +54,7 @@ python people_counter/footpath_counter.py
 python people_counter/people_counter.py
 ```
 
-Zone coordinates were calibrated with a labeled grid overlay (`tools/grid_frame.py`). Tracking uses the foot position (bottom-centre of each box) rather than the box centre, so counting stays consistent across people of different heights.
+Zone coordinates were calibrated with a labeled grid overlay (`tools/grid_frame.py`). The footpath counter tracks the foot position (bottom-centre of each box) rather than the box centre, so counting stays consistent across people of different heights.
 
 ---
 
